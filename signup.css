@@ -17,19 +17,24 @@
 .center {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 846px;
+  margin: 0 auto;
+  max-height: 846px;
+  height: 100%;
   background-color: #fff;
   border-radius: 24px;
 }
 
-img {
+.image {
+  background-image: url(./Placeholder2.png);
+  background-position: center;
+  background-size: contain;
   border-top-right-radius: 24px;
   border-bottom-right-radius: 24px;
 }
 
 .form-container {
   display: flex;
-  margin: 60px 90px;
+  padding: 3rem 4rem;
   flex-direction: column;
   gap: 48px;
 }
@@ -63,16 +68,29 @@ img {
 .signup-form {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1rem;
 }
 
 .signup-form button {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
-  height: 72px;
+  gap: 1rem;
+  height: 3rem;
   border-radius: 40px;
   border: 1px solid #333;
   background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .center {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .form-container {
+    padding: 24px 32px;
+    gap: 32px;
+  }
 }
