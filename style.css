@@ -42,7 +42,8 @@ a {
 
 .nav-center ul li {
   list-style-type: none;
-  font-size: clamp(1rem,2vw,1.5rem);
+  font-size: clamp(14px,2vw,1.5rem);
+  font-family: 'Poppins',sans-serif;
 }
 
 .nav-center ul li:last-of-type{
@@ -57,7 +58,8 @@ a {
   grid-auto-flow: column;
   align-items: center;
   gap: 3rem;
-  font-size: clamp(1rem,2vw,1.5rem);
+  font-size: clamp(14px,2vw,1.5rem);
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -107,7 +109,8 @@ a {
   border: none;
   background: #E87A14;
   color: #fff;
-  font-size: clamp(1rem,2vw,1.5rem);
+  font-size: clamp(14px,2vw,1.5rem);
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -121,14 +124,14 @@ a {
   width: 100%;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1330px) {
   .nav-center ul{
     gap: 1rem;
   }
   .sign-in{
     gap: 1rem;
   }
-  .signup{
+  .button{
     padding: 10px 20px;
   }
 }
